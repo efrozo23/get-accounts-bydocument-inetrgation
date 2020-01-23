@@ -1,0 +1,591 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <Header xmlns="http://schemas.xmlsoap.org/soap/envelope/"/>
+   <Body xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+      <ns2:getAccountsDetailByDocumentResponse xmlns:ns2="http://itau.com.co/services/accounts/accountsdetailbydocument/v2/schemas">
+         <ns2:HeaderResponse>
+            <sch:MessageHeader xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+               <sch:MessageKey>
+                  <sch:integrationId>string</sch:integrationId>
+                  <sch:requestVersion>string</sch:requestVersion>
+                  <sch:requestUUID>04f00eba-387d-47ff-ae56-f233e4ece428</sch:requestUUID>
+               </sch:MessageKey>
+               <sch:MessageInfo>
+                  <sch:dateTime>2020-01-20T14:45:07.622-05:00</sch:dateTime>
+                  <sch:systemId>string</sch:systemId>
+                  <sch:originatorName>Portal</sch:originatorName>
+                  <sch:originatorType>10</sch:originatorType>
+                  <sch:terminalId>string</sch:terminalId>
+                  <sch:terminalType>string</sch:terminalType>
+                  <sch:bankIdType>string</sch:bankIdType>
+                  <sch:bankId>string</sch:bankId>
+                  <sch:trnType>string</sch:trnType>
+               </sch:MessageInfo>
+               <sch:TrnInfoList>
+                  <sch:TrnInfo>
+                     <sch:trnCode/>
+                     <sch:trnSrc>0020</sch:trnSrc>
+                  </sch:TrnInfo>
+               </sch:TrnInfoList>
+            </sch:MessageHeader>
+            <sch:Status xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+               <sch:statusCode>000</sch:statusCode>
+               <sch:serverStatusCode>0</sch:serverStatusCode>
+               <sch:severity>Info</sch:severity>
+               <sch:statusDesc>Transaccion Exitosa</sch:statusDesc>
+            </sch:Status>
+         </ns2:HeaderResponse>
+         <ns2:AccountsDetailList>
+            <ns2:AccountsDetailRecord>
+               <sch:Acct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:acctId>014-09055-1</sch:acctId>
+                  <sch:acctType>AFC</sch:acctType>
+                  <sch:acctSubType>228</sch:acctSubType>
+                  <sch:branchId>14</sch:branchId>
+               </sch:Acct>
+               <sch:acctStatusDesc xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">Inactiva</sch:acctStatusDesc>
+               <sch:startDt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">2018-05-28T13:52:00.000-05:00</sch:startDt>
+               <sch:AcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:AcctBal>
+               <sch:OverDraftAcctAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:OverDraftAcctAmt>
+               <sch:ExtAcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:ExtAcctBal>
+               <sch:SwapAcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:SwapAcctBal>
+               <sch:desc xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">Cuenta de Ahorros AFC</sch:desc>
+               <sch:CurAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:CurAmt>
+               <sch:AcctTaxInfo xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:AcctTaxInfo>
+               <sch:TaxPaidCurAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:TaxPaidCurAmt>
+               <sch:aging xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0</sch:aging>
+               <sch:payOffAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0.000000</sch:payOffAmt>
+               <sch:RefInfoAcct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:RefInfoAcct>
+               <sch:pmtAddAcct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0.000000</sch:pmtAddAcct>
+               <sch:dueDt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">2020-01-11T00:00:00.000-05:00</sch:dueDt>
+               <sch:overLimitAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0.000000</sch:overLimitAmt>
+               <sch:restrict xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:restrict>
+               <sch:restrictClass xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:restrictClass>
+               <sch:restrictReason xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">NA</sch:restrictReason>
+               <sch:curRate xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">7.000</sch:curRate>
+               <sch:curCode xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">COP</sch:curCode>
+               <sch:acctRelType xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:acctRelType>
+               <sch:acctRelId xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:acctRelId>
+            </ns2:AccountsDetailRecord>
+            <ns2:AccountsDetailRecord>
+               <sch:Acct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:acctId>014-08977-0</sch:acctId>
+                  <sch:acctType>AHO</sch:acctType>
+                  <sch:acctSubType>222</sch:acctSubType>
+                  <sch:branchId>14</sch:branchId>
+               </sch:Acct>
+               <sch:acctStatusDesc xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">Inactiva</sch:acctStatusDesc>
+               <sch:startDt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">2018-04-30T10:05:00.000-05:00</sch:startDt>
+               <sch:AcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>1208339.990000</sch:amt>
+                  <sch:curCode/>
+               </sch:AcctBal>
+               <sch:OverDraftAcctAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:OverDraftAcctAmt>
+               <sch:ExtAcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>1208339.990000</sch:amt>
+                  <sch:curCode/>
+               </sch:ExtAcctBal>
+               <sch:SwapAcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:SwapAcctBal>
+               <sch:desc xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">Cta Itaú Rentable</sch:desc>
+               <sch:CurAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>1208339.990000</sch:amt>
+                  <sch:curCode/>
+               </sch:CurAmt>
+               <sch:AcctTaxInfo xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:AcctTaxInfo>
+               <sch:TaxPaidCurAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:TaxPaidCurAmt>
+               <sch:aging xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0</sch:aging>
+               <sch:payOffAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0.000000</sch:payOffAmt>
+               <sch:RefInfoAcct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:RefInfoAcct>
+               <sch:pmtAddAcct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0.000000</sch:pmtAddAcct>
+               <sch:dueDt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">2020-01-11T00:00:00.000-05:00</sch:dueDt>
+               <sch:overLimitAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0.000000</sch:overLimitAmt>
+               <sch:restrict xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:restrict>
+               <sch:restrictClass xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:restrictClass>
+               <sch:restrictReason xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">NA</sch:restrictReason>
+               <sch:curRate xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">7.000</sch:curRate>
+               <sch:curCode xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">COP</sch:curCode>
+               <sch:acctRelType xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:acctRelType>
+               <sch:acctRelId xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:acctRelId>
+            </ns2:AccountsDetailRecord>
+            <ns2:AccountsDetailRecord>
+               <sch:Acct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:acctId>014-08981-0</sch:acctId>
+                  <sch:acctType>AHO</sch:acctType>
+                  <sch:acctSubType>222</sch:acctSubType>
+                  <sch:branchId>14</sch:branchId>
+               </sch:Acct>
+               <sch:acctStatusDesc xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">Inactiva</sch:acctStatusDesc>
+               <sch:startDt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">2018-04-30T11:54:00.000-05:00</sch:startDt>
+               <sch:AcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>1208339.990000</sch:amt>
+                  <sch:curCode/>
+               </sch:AcctBal>
+               <sch:OverDraftAcctAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:OverDraftAcctAmt>
+               <sch:ExtAcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>1208339.990000</sch:amt>
+                  <sch:curCode/>
+               </sch:ExtAcctBal>
+               <sch:SwapAcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:SwapAcctBal>
+               <sch:desc xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">Cta Itaú Rentable</sch:desc>
+               <sch:CurAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>1208339.990000</sch:amt>
+                  <sch:curCode/>
+               </sch:CurAmt>
+               <sch:AcctTaxInfo xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:AcctTaxInfo>
+               <sch:TaxPaidCurAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:TaxPaidCurAmt>
+               <sch:aging xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0</sch:aging>
+               <sch:payOffAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0.000000</sch:payOffAmt>
+               <sch:RefInfoAcct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:RefInfoAcct>
+               <sch:pmtAddAcct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0.000000</sch:pmtAddAcct>
+               <sch:dueDt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">2020-01-11T00:00:00.000-05:00</sch:dueDt>
+               <sch:overLimitAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0.000000</sch:overLimitAmt>
+               <sch:restrict xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:restrict>
+               <sch:restrictClass xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:restrictClass>
+               <sch:restrictReason xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">NA</sch:restrictReason>
+               <sch:curRate xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">7.000</sch:curRate>
+               <sch:curCode xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">COP</sch:curCode>
+               <sch:acctRelType xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:acctRelType>
+               <sch:acctRelId xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:acctRelId>
+            </ns2:AccountsDetailRecord>
+            <ns2:AccountsDetailRecord>
+               <sch:Acct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:acctId>014-09072-5</sch:acctId>
+                  <sch:acctType>AHO</sch:acctType>
+                  <sch:acctSubType>229</sch:acctSubType>
+                  <sch:branchId>14</sch:branchId>
+               </sch:Acct>
+               <sch:acctStatusDesc xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">Inactiva</sch:acctStatusDesc>
+               <sch:startDt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">2018-05-31T16:50:00.000-05:00</sch:startDt>
+               <sch:AcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:AcctBal>
+               <sch:OverDraftAcctAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:OverDraftAcctAmt>
+               <sch:ExtAcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:ExtAcctBal>
+               <sch:SwapAcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:SwapAcctBal>
+               <sch:desc xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">Ahorro Programado(Cta Destino)</sch:desc>
+               <sch:CurAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:CurAmt>
+               <sch:AcctTaxInfo xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:AcctTaxInfo>
+               <sch:TaxPaidCurAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:TaxPaidCurAmt>
+               <sch:aging xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0</sch:aging>
+               <sch:payOffAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0.000000</sch:payOffAmt>
+               <sch:RefInfoAcct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:RefInfoAcct>
+               <sch:pmtAddAcct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0.000000</sch:pmtAddAcct>
+               <sch:dueDt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">2020-01-11T00:00:00.000-05:00</sch:dueDt>
+               <sch:overLimitAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0.000000</sch:overLimitAmt>
+               <sch:restrict xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:restrict>
+               <sch:restrictClass xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:restrictClass>
+               <sch:restrictReason xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">NA</sch:restrictReason>
+               <sch:curRate xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">7.000</sch:curRate>
+               <sch:curCode xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">COP</sch:curCode>
+               <sch:acctRelType xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:acctRelType>
+               <sch:acctRelId xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:acctRelId>
+            </ns2:AccountsDetailRecord>
+            <ns2:AccountsDetailRecord>
+               <sch:Acct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:acctId>00000208188</sch:acctId>
+                  <sch:acctType>BSG</sch:acctType>
+                  <sch:acctSubType>968</sch:acctSubType>
+                  <sch:branchId>928</sch:branchId>
+               </sch:Acct>
+               <sch:acctStatusDesc xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">Activo</sch:acctStatusDesc>
+               <sch:startDt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">2018-03-27T12:07:00.000-05:00</sch:startDt>
+               <sch:AcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>2403621.430000</sch:amt>
+                  <sch:curCode/>
+               </sch:AcctBal>
+               <sch:OverDraftAcctAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:OverDraftAcctAmt>
+               <sch:ExtAcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>2403621.430000</sch:amt>
+                  <sch:curCode/>
+               </sch:ExtAcctBal>
+               <sch:SwapAcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:SwapAcctBal>
+               <sch:desc xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">Seguro de Desempleo</sch:desc>
+               <sch:CurAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>2403621.430000</sch:amt>
+                  <sch:curCode/>
+               </sch:CurAmt>
+               <sch:AcctTaxInfo xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:AcctTaxInfo>
+               <sch:TaxPaidCurAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:TaxPaidCurAmt>
+               <sch:aging xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0</sch:aging>
+               <sch:payOffAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0.000000</sch:payOffAmt>
+               <sch:RefInfoAcct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:RefInfoAcct>
+               <sch:pmtAddAcct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0.000000</sch:pmtAddAcct>
+               <sch:dueDt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">2020-01-11T00:00:00.000-05:00</sch:dueDt>
+               <sch:overLimitAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0.000000</sch:overLimitAmt>
+               <sch:restrict xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:restrict>
+               <sch:restrictClass xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:restrictClass>
+               <sch:restrictReason xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">NA</sch:restrictReason>
+               <sch:curRate xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0.000</sch:curRate>
+               <sch:curCode xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">COP</sch:curCode>
+               <sch:acctRelType xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:acctRelType>
+               <sch:acctRelId xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:acctRelId>
+            </ns2:AccountsDetailRecord>
+            <ns2:AccountsDetailRecord>
+               <sch:Acct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:acctId>032-91094-5</sch:acctId>
+                  <sch:acctType>CRP</sch:acctType>
+                  <sch:acctSubType>122</sch:acctSubType>
+                  <sch:branchId>32</sch:branchId>
+               </sch:Acct>
+               <sch:acctStatusDesc xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">Activo</sch:acctStatusDesc>
+               <sch:startDt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">2017-12-20T18:38:00.000-05:00</sch:startDt>
+               <sch:AcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>-23214285.760000</sch:amt>
+                  <sch:curCode/>
+               </sch:AcctBal>
+               <sch:OverDraftAcctAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>40000000.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:OverDraftAcctAmt>
+               <sch:ExtAcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>16785714.240000</sch:amt>
+                  <sch:curCode/>
+               </sch:ExtAcctBal>
+               <sch:SwapAcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:SwapAcctBal>
+               <sch:desc xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">Crédito Rotativo</sch:desc>
+               <sch:CurAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:CurAmt>
+               <sch:AcctTaxInfo xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>242812.330000</sch:amt>
+                  <sch:curCode/>
+               </sch:AcctTaxInfo>
+               <sch:TaxPaidCurAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:TaxPaidCurAmt>
+               <sch:aging xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0</sch:aging>
+               <sch:payOffAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0.000000</sch:payOffAmt>
+               <sch:RefInfoAcct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:RefInfoAcct>
+               <sch:pmtAddAcct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0.000000</sch:pmtAddAcct>
+               <sch:dueDt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">2019-06-20T00:00:00.000-05:00</sch:dueDt>
+               <sch:overLimitAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">40000000.000000</sch:overLimitAmt>
+               <sch:restrict xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:restrict>
+               <sch:restrictClass xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:restrictClass>
+               <sch:restrictReason xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">NA</sch:restrictReason>
+               <sch:curRate xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">24.510</sch:curRate>
+               <sch:curCode xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">COP</sch:curCode>
+               <sch:acctRelType xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:acctRelType>
+               <sch:acctRelId xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:acctRelId>
+            </ns2:AccountsDetailRecord>
+            <ns2:AccountsDetailRecord>
+               <sch:Acct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:acctId>014-41097-1</sch:acctId>
+                  <sch:acctType>CTE</sch:acctType>
+                  <sch:acctSubType>111</sch:acctSubType>
+                  <sch:branchId>14</sch:branchId>
+               </sch:Acct>
+               <sch:acctStatusDesc xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">Activo</sch:acctStatusDesc>
+               <sch:startDt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">2017-12-20T18:37:00.000-05:00</sch:startDt>
+               <sch:AcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>-4607117.440000</sch:amt>
+                  <sch:curCode/>
+               </sch:AcctBal>
+               <sch:OverDraftAcctAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>10000000.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:OverDraftAcctAmt>
+               <sch:ExtAcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>5392882.560000</sch:amt>
+                  <sch:curCode/>
+               </sch:ExtAcctBal>
+               <sch:SwapAcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:SwapAcctBal>
+               <sch:desc xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">Cuenta Corriente</sch:desc>
+               <sch:CurAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>-4607117.440000</sch:amt>
+                  <sch:curCode/>
+               </sch:CurAmt>
+               <sch:AcctTaxInfo xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>10410.710000</sch:amt>
+                  <sch:curCode/>
+               </sch:AcctTaxInfo>
+               <sch:TaxPaidCurAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:TaxPaidCurAmt>
+               <sch:aging xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">4</sch:aging>
+               <sch:payOffAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0.000000</sch:payOffAmt>
+               <sch:RefInfoAcct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:RefInfoAcct>
+               <sch:pmtAddAcct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0.000000</sch:pmtAddAcct>
+               <sch:dueDt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">2020-01-11T00:00:00.000-05:00</sch:dueDt>
+               <sch:overLimitAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">10000000.000000</sch:overLimitAmt>
+               <sch:restrict xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:restrict>
+               <sch:restrictClass xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:restrictClass>
+               <sch:restrictReason xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">NA</sch:restrictReason>
+               <sch:curRate xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">25.271</sch:curRate>
+               <sch:curCode xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">COP</sch:curCode>
+               <sch:acctRelType xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:acctRelType>
+               <sch:acctRelId xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:acctRelId>
+            </ns2:AccountsDetailRecord>
+            <ns2:AccountsDetailRecord>
+               <sch:Acct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:acctId>951875488-00</sch:acctId>
+                  <sch:acctType>HIP</sch:acctType>
+                  <sch:acctSubType>951</sch:acctSubType>
+                  <sch:branchId>14</sch:branchId>
+               </sch:Acct>
+               <sch:acctStatusDesc xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">Mora 3</sch:acctStatusDesc>
+               <sch:startDt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">2018-05-30T19:37:00.000-05:00</sch:startDt>
+               <sch:AcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>342617973.830000</sch:amt>
+                  <sch:curCode/>
+               </sch:AcctBal>
+               <sch:OverDraftAcctAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:OverDraftAcctAmt>
+               <sch:ExtAcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>342617973.830000</sch:amt>
+                  <sch:curCode/>
+               </sch:ExtAcctBal>
+               <sch:SwapAcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:SwapAcctBal>
+               <sch:desc xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">Hipotecario No VIS en Pesos</sch:desc>
+               <sch:CurAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>342617973.830000</sch:amt>
+                  <sch:curCode/>
+               </sch:CurAmt>
+               <sch:AcctTaxInfo xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>13022501.120000</sch:amt>
+                  <sch:curCode/>
+               </sch:AcctTaxInfo>
+               <sch:TaxPaidCurAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>2822854.940000</sch:amt>
+                  <sch:curCode/>
+               </sch:TaxPaidCurAmt>
+               <sch:aging xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">325</sch:aging>
+               <sch:payOffAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">120399.670000</sch:payOffAmt>
+               <sch:RefInfoAcct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:RefInfoAcct>
+               <sch:pmtAddAcct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">689237.720000</sch:pmtAddAcct>
+               <sch:dueDt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">2019-07-02T00:00:00.000-05:00</sch:dueDt>
+               <sch:overLimitAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0.000000</sch:overLimitAmt>
+               <sch:restrict xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:restrict>
+               <sch:restrictClass xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:restrictClass>
+               <sch:restrictReason xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">NA</sch:restrictReason>
+               <sch:curRate xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">10.000</sch:curRate>
+               <sch:curCode xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">COP</sch:curCode>
+               <sch:acctRelType xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:acctRelType>
+               <sch:acctRelId xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:acctRelId>
+            </ns2:AccountsDetailRecord>
+            <ns2:AccountsDetailRecord>
+               <sch:Acct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:acctId>014646189-00</sch:acctId>
+                  <sch:acctType>ORD</sch:acctType>
+                  <sch:acctSubType>310</sch:acctSubType>
+                  <sch:branchId>14</sch:branchId>
+               </sch:Acct>
+               <sch:acctStatusDesc xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">Vigente</sch:acctStatusDesc>
+               <sch:startDt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">2018-03-26T10:10:00.000-05:00</sch:startDt>
+               <sch:AcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>166631354.330000</sch:amt>
+                  <sch:curCode/>
+               </sch:AcctBal>
+               <sch:OverDraftAcctAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:OverDraftAcctAmt>
+               <sch:ExtAcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>166631354.330000</sch:amt>
+                  <sch:curCode/>
+               </sch:ExtAcctBal>
+               <sch:SwapAcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:SwapAcctBal>
+               <sch:desc xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">Préstamos Ordinarios</sch:desc>
+               <sch:CurAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>166631354.330000</sch:amt>
+                  <sch:curCode/>
+               </sch:CurAmt>
+               <sch:AcctTaxInfo xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>1661870.040000</sch:amt>
+                  <sch:curCode/>
+               </sch:AcctTaxInfo>
+               <sch:TaxPaidCurAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>2266186.420000</sch:amt>
+                  <sch:curCode/>
+               </sch:TaxPaidCurAmt>
+               <sch:aging xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0</sch:aging>
+               <sch:payOffAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0.000000</sch:payOffAmt>
+               <sch:RefInfoAcct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:RefInfoAcct>
+               <sch:pmtAddAcct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">167000.790000</sch:pmtAddAcct>
+               <sch:dueDt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">2019-07-02T00:00:00.000-05:00</sch:dueDt>
+               <sch:overLimitAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0.000000</sch:overLimitAmt>
+               <sch:restrict xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:restrict>
+               <sch:restrictClass xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:restrictClass>
+               <sch:restrictReason xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">NA</sch:restrictReason>
+               <sch:curRate xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">17.597</sch:curRate>
+               <sch:curCode xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">COP</sch:curCode>
+               <sch:acctRelType xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:acctRelType>
+               <sch:acctRelId xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:acctRelId>
+            </ns2:AccountsDetailRecord>
+            <ns2:AccountsDetailRecord>
+               <sch:Acct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:acctId>014897618-00</sch:acctId>
+                  <sch:acctType>ORD</sch:acctType>
+                  <sch:acctSubType>310</sch:acctSubType>
+                  <sch:branchId>14</sch:branchId>
+               </sch:Acct>
+               <sch:acctStatusDesc xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">Vigente</sch:acctStatusDesc>
+               <sch:startDt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">2018-12-21T18:17:00.000-05:00</sch:startDt>
+               <sch:AcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>139642601.510000</sch:amt>
+                  <sch:curCode/>
+               </sch:AcctBal>
+               <sch:OverDraftAcctAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:OverDraftAcctAmt>
+               <sch:ExtAcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>139642601.510000</sch:amt>
+                  <sch:curCode/>
+               </sch:ExtAcctBal>
+               <sch:SwapAcctBal xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:SwapAcctBal>
+               <sch:desc xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">Préstamos Ordinarios</sch:desc>
+               <sch:CurAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>139642601.510000</sch:amt>
+                  <sch:curCode/>
+               </sch:CurAmt>
+               <sch:AcctTaxInfo xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>180138.960000</sch:amt>
+                  <sch:curCode/>
+               </sch:AcctTaxInfo>
+               <sch:TaxPaidCurAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:TaxPaidCurAmt>
+               <sch:aging xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0</sch:aging>
+               <sch:payOffAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0.000000</sch:payOffAmt>
+               <sch:RefInfoAcct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">
+                  <sch:amt>0.000000</sch:amt>
+                  <sch:curCode/>
+               </sch:RefInfoAcct>
+               <sch:pmtAddAcct xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0.000000</sch:pmtAddAcct>
+               <sch:dueDt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">2019-07-21T00:00:00.000-05:00</sch:dueDt>
+               <sch:overLimitAmt xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">0.000000</sch:overLimitAmt>
+               <sch:restrict xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:restrict>
+               <sch:restrictClass xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:restrictClass>
+               <sch:restrictReason xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">NA</sch:restrictReason>
+               <sch:curRate xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">16.626</sch:curRate>
+               <sch:curCode xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas">COP</sch:curCode>
+               <sch:acctRelType xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:acctRelType>
+               <sch:acctRelId xmlns:sch="http://itau.com.co/commoncannonical/v2/schemas"></sch:acctRelId>
+            </ns2:AccountsDetailRecord>
+         </ns2:AccountsDetailList>
+      </ns2:getAccountsDetailByDocumentResponse>
+   </Body>
+</soapenv:Envelope>

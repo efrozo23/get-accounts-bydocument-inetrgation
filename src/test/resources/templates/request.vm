@@ -1,0 +1,74 @@
+<request>
+<Header xmlns:ns1="http://itau.com.co/services/common/auditory/v2/schemas" xmlns="http://schemas.xmlsoap.org/soap/envelope/"/>
+<sch:HeaderRequest xmlns:ns1="http://itau.com.co/services/common/auditory/v2/schemas" xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sch="http://itau.com.co/services/accounts/accountsdetailbydocument/v2/schemas">
+            <!--Optional:-->
+            <sch1:MessageHeader xmlns:sch1="http://itau.com.co/commoncannonical/v2/schemas">
+               <!--Optional:-->
+               <sch1:MessageKey>
+                  <!--Optional:-->
+                  <sch1:integrationId>string</sch1:integrationId>
+                  <!--Optional:-->
+                  <sch1:requestVersion>string</sch1:requestVersion>
+                  <sch1:requestUUID>${headers.requestUUID}</sch1:requestUUID>
+               </sch1:MessageKey>
+               <!--Optional:-->
+               <sch1:MessageInfo>
+                  <sch1:dateTime>${headers.dateTime}</sch1:dateTime>
+                  <sch1:systemId>string</sch1:systemId>
+                  <!--Optional:-->
+                  <sch1:originatorName>${headers.originatorName}</sch1:originatorName>
+                  <sch1:originatorType>${headers.originatorType}</sch1:originatorType>
+                  <sch1:terminalId>${headers.terminalId}</sch1:terminalId>
+                  <!--Optional:-->
+                  <sch1:terminalType>string</sch1:terminalType>
+                  <!--Optional:-->
+                  <sch1:bankIdType>string</sch1:bankIdType>
+                  <!--Optional:-->
+                  <sch1:bankId>string</sch1:bankId>
+                  <!--Optional:-->
+                  <sch1:trnType>string</sch1:trnType>
+               </sch1:MessageInfo>
+               <!--Optional:-->
+               <sch1:TrnInfoList>
+                  <!--Zero or more repetitions:-->
+                  <sch1:TrnInfo>
+                     <!--Optional:-->
+                     <sch1:trnCode>string</sch1:trnCode>
+                     <!--Optional:-->
+                     <sch1:trnSrc>string</sch1:trnSrc>
+                  </sch1:TrnInfo>
+               </sch1:TrnInfoList>
+            </sch1:MessageHeader>
+            <!--Optional:-->
+            <sch1:User xmlns:sch1="http://itau.com.co/commoncannonical/v2/schemas">
+               <!--Optional:-->
+               <sch1:userName>TEST</sch1:userName>
+               <!--Optional:-->
+               <sch1:userToken/>
+               <!--Optional:-->
+               
+            </sch1:User>
+         </sch:HeaderRequest>
+<sch:CustId xmlns:ns1="http://itau.com.co/services/common/auditory/v2/schemas" xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sch="http://itau.com.co/services/accounts/accountsdetailbydocument/v2/schemas">
+            <!--Optional:-->
+            <sch1:SPName xmlns:sch1="http://itau.com.co/commoncannonical/v2/schemas"/>
+            <!--Optional:-->
+            <sch1:custPermId xmlns:sch1="http://itau.com.co/commoncannonical/v2/schemas">${headers.custPermId}</sch1:custPermId>
+            <!--Optional:-->
+            <sch1:custLoginId xmlns:sch1="http://itau.com.co/commoncannonical/v2/schemas"/>
+            <!--Optional:-->
+            <sch1:custType xmlns:sch1="http://itau.com.co/commoncannonical/v2/schemas">${headers.custType}</sch1:custType>
+         </sch:CustId>
+<sch:AcctStatus xmlns:ns1="http://itau.com.co/services/common/auditory/v2/schemas" xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sch="http://itau.com.co/services/accounts/accountsdetailbydocument/v2/schemas">
+            <!--Optional:-->
+            <sch:acctStatusCode/>
+            <!--Optional:-->
+            <sch:restrictedDbInd>${headers.restrictedDbInd}</sch:restrictedDbInd>
+            <!--Optional:-->
+            <sch:restrictedDrInd>${headers.restrictedDrInd}</sch:restrictedDrInd>
+            <!--Optional:-->
+            <sch:lockStatusInd>${headers.lockStatusInd}</sch:lockStatusInd>
+            <!--Optional:-->
+            <sch:additionalStatus/>
+         </sch:AcctStatus>
+</request>

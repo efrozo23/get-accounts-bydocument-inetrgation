@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <Header xmlns="http://schemas.xmlsoap.org/soap/envelope/" />
+   <Body xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+      <ns:getAccountsDetailByDocumentResponse xmlns:ns="http://itau.com.co/services/accounts/accountsdetailbydocument/v2/schemas">
+         <ns:HeaderResponse>
+            <cmm2:MessageHeader xmlns:cmm2="http://itau.com.co/commoncannonical/v2/schemas">
+               <cmm2:MessageKey>
+                  <cmm2:integrationId>string</cmm2:integrationId>
+                  <cmm2:requestVersion>string</cmm2:requestVersion>
+                  <cmm2:requestUUID>1db56092-42b5-47f9-8272-3ff0a72f268a</cmm2:requestUUID>
+               </cmm2:MessageKey>
+               <cmm2:MessageInfo>
+                  <cmm2:dateTime>2020-01-23T14:14:52.963-05:00</cmm2:dateTime>
+                  <cmm2:systemId>string</cmm2:systemId>
+                  <cmm2:originatorName>Portal</cmm2:originatorName>
+                  <cmm2:originatorType>10</cmm2:originatorType>
+                  <cmm2:terminalId>string</cmm2:terminalId>
+                  <cmm2:terminalType>string</cmm2:terminalType>
+                  <cmm2:bankIdType>string</cmm2:bankIdType>
+                  <cmm2:bankId>string</cmm2:bankId>
+                  <cmm2:trnType>string</cmm2:trnType>
+               </cmm2:MessageInfo>
+               <cmm2:TrnInfoList>
+                  <cmm2:TrnInfo>
+                     <cmm2:trnCode />
+                     <cmm2:trnSrc>0020</cmm2:trnSrc>
+                  </cmm2:TrnInfo>
+               </cmm2:TrnInfoList>
+            </cmm2:MessageHeader>
+            <cmm2:Status xmlns:cmm2="http://itau.com.co/commoncannonical/v2/schemas">
+               <cmm2:statusCode>150</cmm2:statusCode>
+               <cmm2:serverStatusCode />
+               <cmm2:severity>Error</cmm2:severity>
+               <cmm2:statusDesc>Error General en OSB</cmm2:statusDesc>
+               <cmm2:AdditionalStatus>
+                  <cmm2:statusCode>380001</cmm2:statusCode>
+                  <cmm2:serverStatusCode />
+                  <cmm2:severity>Error</cmm2:severity>
+                  <cmm2:statusDesc>Invoke JCA outbound service failed with application error, exception: com.bea.wli.sb.transports.jca.JCATransportException: oracle.tip.adapter.sa.api.JCABindingException: oracle.tip.adapter.sa.impl.fw.ext.org.collaxa.thirdparty.apache.wsif.WSIFException: servicebus:/accounts/AccountsDetailByDocument/v2/interfaces/wsdl/DB_PHOENIX_BSP_SRVEAI_PRDCTOSCLIENTE_MEF.wsdl [ DB_PHOENIX_BSP_SRVEAI_PRDCTOSCLIENTE_MEF_ptt::DB_PHOENIX_BSP_SRVEAI_PRDCTOSCLIENTE_MEF(InputParameters,OutputParameters) ] - WSIF JCA Execute of operation 'DB_PHOENIX_BSP_SRVEAI_PRDCTOSCLIENTE_MEF' failed due to: Stored procedure invocation error. Error while trying to prepare and execute the phoenix.dbo.BSP_SRVEAI_PrdctosCliente_MEf API. An error occurred while preparing and executing the phoenix.dbo.BSP_SRVEAI_PrdctosCliente_MEf API. Cause: com.sybase.jdbc4.jdbc.SybSQLException: Insufficient result space for explicit conversion of SMALLINT value '12345' to a VARCHAR field. ; nested exception is: BINDING.JCA-11811 Stored</cmm2:statusDesc>
+               </cmm2:AdditionalStatus>
+            </cmm2:Status>
+         </ns:HeaderResponse>
+      </ns:getAccountsDetailByDocumentResponse>
+   </Body>
+</soapenv:Envelope>

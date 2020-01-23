@@ -1,0 +1,33 @@
+spec:
+  template:
+    spec:
+      containers:
+        - env:
+            - name: SPRING_APPLICATION_JSON
+              value: '{"server":{"undertow":{"io-threads":10, "worker-threads":20 }}}'
+            - name: JAVA_OPTIONS
+              value: '-Xms512m -Xmx1024m -Dfile.encoding=ISO-8859-1'
+          envFrom:
+            - configMapRef:
+                name: get-accounts-bydocuments-config
+          readinessProbe:
+            httpGet:
+              path: /healthcheck
+              port: 8080
+              scheme: HTTP
+            failureThreshold: 3
+            initialDelaySeconds: 20
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 120
+          livenessProbe:
+            httpGet:
+              path: /healthcheck
+              port: 8080
+              scheme: HTTP
+            failureThreshold: 2
+            initialDelaySeconds: 60
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 120
+          

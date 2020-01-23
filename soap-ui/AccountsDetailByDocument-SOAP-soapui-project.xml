@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="4b78ddb7-ce15-4d0d-a097-c71acb7ab749" activeEnvironment="Default" name="AccountsDetailByDocument_SOAP" resourceRoot="" soapui-version="5.2.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="a10ecfe6-3212-4edb-b773-22690f055fce" wsaVersion="NONE" name="AccountsDetailByDocumentV2ServiceSOAP" type="wsdl" bindingName="{http://itau.com.co/services/accounts/accountsdetailbydocument/v2/definitions}AccountsDetailByDocumentV2ServiceSOAP" soapVersion="1_1" anonymous="optional" definition="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?WSDL"><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?WSDL</con:url><con:content><![CDATA[<WL5G3N0:definitions name="AccountsDetailByDocumentV2Service" targetNamespace="http://itau.com.co/services/accounts/accountsdetailbydocument/v2/definitions" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://itau.com.co/services/accounts/accountsdetailbydocument/v2/definitions" xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap/">
+  <WL5G3N0:import location="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?WSDL%2Faccounts%2FAccountsDetailByDocument%2Fv2%2Finterfaces%2Fwsdl%2FAccountsDetailByDocument" namespace="http://itau.com.co/services/accounts/accountsdetailbydocument/v2/definitions"/>
+  <WL5G3N0:binding name="AccountsDetailByDocumentV2ServiceSOAP" type="WL5G3N1:getAccountsDetailByDocumentPortType">
+    <WL5G3N2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="getAccountsDetailByDocument">
+      <WL5G3N2:operation soapAction="http://itau.com.co/services/accounts/accountsdetailbydocument/operations/getAccountsDetailByDocument"/>
+      <WL5G3N0:input>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N2:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="AccountsDetailByDocumentV2ServiceSOAPQSService">
+    <WL5G3N0:documentation>OSB Service</WL5G3N0:documentation>
+    <WL5G3N0:port binding="WL5G3N1:AccountsDetailByDocumentV2ServiceSOAP" name="AccountsDetailByDocumentV2ServiceSOAPQSPort">
+      <WL5G3N2:address location="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?WSDL%2Faccounts%2FAccountsDetailByDocument%2Fv2%2Finterfaces%2Fwsdl%2FAccountsDetailByDocument</con:url><con:content><![CDATA[<WL5G3N0:definitions name="AccountsDetailByDocumentV2" targetNamespace="http://itau.com.co/services/accounts/accountsdetailbydocument/v2/definitions" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://itau.com.co/services/accounts/accountsdetailbydocument/v2/schemas" xmlns:WL5G3N2="http://itau.com.co/services/accounts/accountsdetailbydocument/v2/definitions">
+  <WL5G3N0:types>
+    <xs:schema xmlns:iccssovd="http://itau.com.co/services/accounts/accountsdetailbydocument/v2/definitions" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://itau.com.co/services/accounts/accountsdetailbydocument/v2/definitions" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://itau.com.co/services/accounts/accountsdetailbydocument/v2/schemas">
+      <xs:import namespace="http://itau.com.co/services/accounts/accountsdetailbydocument/v2/schemas" schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2Faccounts%2FAccountsDetailByDocument%2Fv2%2Finterfaces%2Fschemas%2FAccountsDetailByDocument"/>
+    </xs:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="getAccountsDetailByDocumentMsg">
+    <WL5G3N0:part element="WL5G3N1:getAccountsDetailByDocumentRequest" name="request"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getAccountsDetailByDocumentOutMsg">
+    <WL5G3N0:part element="WL5G3N1:getAccountsDetailByDocumentResponse" name="response"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="getAccountsDetailByDocumentPortType">
+    <WL5G3N0:operation name="getAccountsDetailByDocument">
+      <WL5G3N0:input message="WL5G3N2:getAccountsDetailByDocumentMsg"/>
+      <WL5G3N0:output message="WL5G3N2:getAccountsDetailByDocumentOutMsg"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+</WL5G3N0:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2Faccounts%2FAccountsDetailByDocument%2Fv2%2Finterfaces%2Fschemas%2FAccountsDetailByDocument</con:url><con:content><![CDATA[<xs:schema targetNamespace="http://itau.com.co/services/accounts/accountsdetailbydocument/v2/schemas" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://itau.com.co/services/accounts/accountsdetailbydocument/v2/schemas" xmlns:cmm2="http://itau.com.co/commoncannonical/v2/schemas">
+  <xs:import schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FHeaderResponse_Type" namespace="http://itau.com.co/commoncannonical/v2/schemas"/>
+  <xs:import schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FCustId_Type" namespace="http://itau.com.co/commoncannonical/v2/schemas"/>
+  <xs:import schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FStatus_Type" namespace="http://itau.com.co/commoncannonical/v2/schemas"/>
+  <xs:import schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FHeaderRequest_Type" namespace="http://itau.com.co/commoncannonical/v2/schemas"/>
+  <xs:import schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FHeaderResponse_Type" namespace="http://itau.com.co/commoncannonical/v2/schemas"/>
+  <xs:import schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Faggregates%2FAccountsDetailRecord_Type" namespace="http://itau.com.co/commoncannonical/v2/schemas"/>
+  <xs:import schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FAcctStatusDesc_Type" namespace="http://itau.com.co/commoncannonical/v2/schemas"/>
+  <xs:import schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FStatusDesc_Type" namespace="http://itau.com.co/commoncannonical/v2/schemas"/>
+  <xs:element name="getAccountsDetailByDocumentRequest" type="tns:getAccountsDetailByDocumentRq_Type"/>
+  <xs:element name="getAccountsDetailByDocumentResponse" type="tns:getAccountsDetailByDocumentRs_Type"/>
+  <xs:complexType name="getAccountsDetailByDocumentRq_Type">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" type="cmm2:HeaderRequest_Type" name="HeaderRequest"/>
+      <xs:element minOccurs="1" maxOccurs="1" type="cmm2:CustId_Type" name="CustId"/>
+      <xs:element minOccurs="0" maxOccurs="1" type="tns:AcctStatus_Type" name="AcctStatus"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAccountsDetailByDocumentRs_Type">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:HeaderResponse_Type" name="HeaderResponse"/>
+      <xs:element minOccurs="0" maxOccurs="1" type="tns:AccountsDetailList" name="AccountsDetailList"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AcctStatus_Type">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:AcctStatusDesc_Type" name="acctStatusCode"/>
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:C" name="restrictedDbInd"/>
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:C" name="restrictedDrInd"/>
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:C" name="lockStatusInd"/>
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:StatusDesc_Type" name="additionalStatus"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AccountsDetailList">
+    <xs:sequence>
+      <xs:element name="AccountsDetailRecord" type="cmm2:AccountsDetailRecord_Type" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FHeaderResponse_Type</con:url><con:content><![CDATA[<xsd:schema targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://itau.com.co/commoncannonical/v2/schemas">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FMessageHeader_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FStatus_Type"/>
+  <xsd:complexType name="HeaderResponse_Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="MessageHeader" type="MessageHeader_Type"/>
+      <xsd:element minOccurs="0" name="Status" type="Status_Type"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FMessageHeader_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://itau.com.co/commoncannonical/v2/schemas">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FMessageKey_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FMessageInfo_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FTrnInfo_Type"/>
+  <xsd:complexType name="MessageHeader_Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="MessageKey" type="MessageKey_Type"/>
+      <xsd:element minOccurs="0" name="MessageInfo" type="MessageInfo_Type"/>
+      <xsd:element minOccurs="0" name="TrnInfoList" type="TrnInfoList_Type"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="TrnInfoList_Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="TrnInfo" type="TrnInfo_Type" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FMessageKey_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://itau.com.co/commoncannonical/v2/schemas">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FC"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FUUID_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FVersion_Type"/>
+  <xsd:complexType name="MessageKey_Type">
+    <xsd:sequence>
+      <xsd:element name="integrationId" type="C" minOccurs="0"/>
+      <xsd:element name="requestVersion" type="Version_Type" minOccurs="0"/>
+      <xsd:element name="requestUUID" type="UUID_Type" minOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FC</con:url><con:content>&lt;xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  &lt;xsd:simpleType name="C">
+    &lt;xsd:restriction base="xsd:string"/>
+  &lt;/xsd:simpleType>
+&lt;/xsd:schema></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FUUID_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FC"/>
+  <xsd:simpleType name="UUID_Type">
+    <xsd:annotation>
+      <xsd:documentation>UUID elements are Narrow Character with a maximum length of 36.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="C">
+      <xsd:maxLength value="36"/>
+      <xsd:pattern value="([0-9]|[a-f]|[A-F]){8}(-([0-9]|[a-f]|[A-F]){4})(-([0-9]|[a-f]|[A-F]){4})(-([0-9]|[a-f]|[A-F]){4})(-([0-9]|[a-f]|[A-F]){12})"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FVersion_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FC"/>
+  <xsd:simpleType name="Version_Type">
+    <xsd:restriction base="C">
+      <xsd:maxLength value="12"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FMessageInfo_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://itau.com.co/commoncannonical/v2/schemas">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FDateTime_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FC"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FOriginatorName_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FOriginatorType_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FTerminalId_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FTerminalType_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FBankId_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FOriginatorType_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FTrnType_Type"/>
+  <xsd:complexType name="MessageInfo_Type">
+    <xsd:sequence>
+      <xsd:element name="dateTime" type="DateTime_Type" minOccurs="1"/>
+      <xsd:element name="systemId" type="C" minOccurs="1"/>
+      <xsd:element name="originatorName" type="OriginatorName_Type" minOccurs="0"/>
+      <xsd:element name="originatorType" type="OriginatorType_Type" minOccurs="1"/>
+      <xsd:element name="terminalId" type="TerminalId_Type" minOccurs="1"/>
+      <xsd:element name="terminalType" type="TerminalType_Type" minOccurs="0"/>
+      <xsd:element name="bankIdType" minOccurs="0" type="BankId_Type"/>
+      <xsd:element name="bankId" type="BankId_Type" minOccurs="0"/>
+      <xsd:element minOccurs="0" name="trnType" type="TrnType_Type"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FDateTime_Type</con:url><con:content>&lt;xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  &lt;xsd:simpleType name="DateTime_Type">
+    &lt;xsd:restriction base="xsd:dateTime"/>
+  &lt;/xsd:simpleType>
+&lt;/xsd:schema></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FOriginatorName_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FC"/>
+  <xsd:simpleType name="OriginatorName_Type">
+    <xsd:restriction base="C">
+      <xsd:maxLength value="40"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FOriginatorType_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FLong_Type"/>
+  <xsd:simpleType name="OriginatorType_Type">
+    <xsd:restriction base="Long_Type"/>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FLong_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:simpleType name="Long_Type">
+    <xsd:annotation>
+      <xsd:documentation>Long is an integer value, which may be positive,
+				negative, or zero, with values ranging from -2147483648
+				to
+				2147483647.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:long"/>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FTerminalId_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FIdentifier_Type"/>
+  <xsd:simpleType name="TerminalId_Type">
+    <xsd:restriction base="Identifier_Type"/>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FIdentifier_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FC"/>
+  <xsd:simpleType name="Identifier_Type">
+    <xsd:annotation>
+      <xsd:documentation>Object identifiers in the IFX Specification are of
+				the data type "Identifier." This is a Narrow Character data type with
+				a maximum length of 255.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="C">
+      <xsd:maxLength value="255"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FTerminalType_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FOpenEnum_Type"/>
+  <xsd:simpleType name="TerminalType_Type">
+    <xsd:restriction base="OpenEnum_Type"/>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FOpenEnum_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FC"/>
+  <xsd:simpleType name="OpenEnum_Type">
+    <xsd:restriction base="C">
+      <xsd:maxLength value="80"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FBankId_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FC"/>
+  <xsd:simpleType name="BankId_Type">
+    <xsd:restriction base="C">
+      <xsd:maxLength value="34"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FTrnType_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FOpenEnum_Type"/>
+  <xsd:simpleType name="TrnType_Type">
+    <xsd:restriction base="OpenEnum_Type"/>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FTrnInfo_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FTrnCode_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FTrnSrc_Type"/>
+  <xsd:complexType name="TrnInfo_Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="trnCode" type="TrnCode_Type"/>
+      <xsd:element minOccurs="0" name="trnSrc" type="TrnSrc_Type"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FTrnCode_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FIdentifier_Type"/>
+  <xsd:simpleType name="TrnCode_Type">
+    <xsd:restriction base="Identifier_Type"/>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FTrnSrc_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FOpenEnum_Type"/>
+  <xsd:simpleType name="TrnSrc_Type">
+    <xsd:restriction base="OpenEnum_Type"/>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FStatus_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FStatusCode_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FServerStatusCode_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FSeverity_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FStatusDesc_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FAdditionalStatus_Type"/>
+  <xsd:complexType name="Status_Type">
+    <xsd:sequence>
+      <xsd:element name="statusCode" type="StatusCode_Type"/>
+      <xsd:element name="serverStatusCode" type="ServerStatusCode_Type" minOccurs="0"/>
+      <xsd:element name="severity" type="Severity_Type"/>
+      <xsd:element name="statusDesc" type="StatusDesc_Type" minOccurs="0"/>
+      <xsd:element name="AdditionalStatus" type="AdditionalStatus_Type" maxOccurs="unbounded" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FStatusCode_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FLong_Type"/>
+  <xsd:simpleType name="StatusCode_Type">
+    <xsd:restriction base="Long_Type"/>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FServerStatusCode_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FC"/>
+  <xsd:simpleType name="ServerStatusCode_Type">
+    <xsd:restriction base="C">
+      <xsd:maxLength value="20"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FSeverity_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FNC"/>
+  <xsd:simpleType name="Severity_Type">
+    <xsd:restriction base="NC"/>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FNC</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:simpleType name="NC">
+    <xsd:annotation>
+      <xsd:documentation>Elements of type Narrow Character are elements of
+				character data type with the additional restriction that
+				the only allowable characters are those contained within
+				the ISO Latin-1 character set.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FStatusDesc_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FC"/>
+  <xsd:simpleType name="StatusDesc_Type">
+    <xsd:restriction base="C">
+      <xsd:maxLength value="2048"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FAdditionalStatus_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FStatusCode_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FStatusDesc_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FServerStatusCode_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FSeverity_Type"/>
+  <xsd:complexType name="AdditionalStatus_Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="statusCode" type="StatusCode_Type"/>
+      <xsd:element minOccurs="0" name="serverStatusCode" type="ServerStatusCode_Type"/>
+      <xsd:element name="severity" type="Severity_Type"/>
+      <xsd:element minOccurs="0" name="statusDesc" type="StatusDesc_Type"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FCustId_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FSPName_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FCustPermId_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FCustLoginId_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FCustType_Type"/>
+  <xsd:complexType name="CustId_Type">
+    <xsd:sequence>
+      <xsd:element name="SPName" type="SPName" maxOccurs="1" minOccurs="0"/>
+      <xsd:sequence>
+        <xsd:element minOccurs="0" name="custPermId" type="CustPermId_Type"/>
+        <xsd:element minOccurs="0" name="custLoginId" type="CustLoginId_Type"/>
+        <xsd:element minOccurs="0" name="custType" type="CustType_Type"/>
+      </xsd:sequence>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FSPName_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FIdentifier_Type"/>
+  <xsd:simpleType name="SPName">
+    <xsd:restriction base="Identifier_Type"/>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FCustPermId_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FC"/>
+  <xsd:simpleType name="CustPermId_Type">
+    <xsd:restriction base="C">
+      <xsd:maxLength value="32"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FCustLoginId_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FC"/>
+  <xsd:simpleType name="CustLoginId_Type">
+    <xsd:restriction base="C">
+      <xsd:maxLength value="32"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FCustType_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FOpenEnum_Type"/>
+  <xsd:simpleType name="CustType_Type">
+    <xsd:restriction base="OpenEnum_Type"/>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FHeaderRequest_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://itau.com.co/commoncannonical/v2/schemas">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FMessageHeader_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FUser_Type"/>
+  <xsd:complexType name="HeaderRequest_Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="MessageHeader" type="MessageHeader_Type"/>
+      <xsd:element minOccurs="0" name="User" type="User_Type"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FUser_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://itau.com.co/commoncannonical/v2/schemas">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FC"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FEmployeeIdentlNum_Type"/>
+  <xsd:complexType name="User_Type">
+    <xsd:sequence>
+      <xsd:element name="userName" type="C" maxOccurs="1" minOccurs="0"/>
+      <xsd:element name="userToken" type="C" maxOccurs="1" minOccurs="0"/>
+      <xsd:element name="employeeIdentlNum" type="EmployeeIdentlNum_Type" minOccurs="0" nillable="true"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FEmployeeIdentlNum_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FC"/>
+  <xsd:simpleType name="EmployeeIdentlNum_Type">
+    <xsd:restriction base="C">
+      <xsd:maxLength value="32"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Faggregates%2FAccountsDetailRecord_Type</con:url><con:content><![CDATA[<xs:schema targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:cmm2="http://itau.com.co/commoncannonical/v2/schemas">
+  <xs:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Faggregates%2FAcctKeys_Type"/>
+  <xs:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FAcctStatusDesc_Type"/>
+  <xs:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FStartDt_Type"/>
+  <xs:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FEndDt_Type"/>
+  <xs:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FCurrencyAmount_Type"/>
+  <xs:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FOverDraftAcctAmt_Type"/>
+  <xs:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FDesc_Type"/>
+  <xs:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FCurAmt_Type"/>
+  <xs:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FOpenEnum_Type"/>
+  <xs:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FDecimal_Type"/>
+  <xs:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FDateTime_Type"/>
+  <xs:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FRestrict_Type"/>
+  <xs:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FC"/>
+  <xs:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FCurRate_Type"/>
+  <xs:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FCurCode_Type"/>
+  <xs:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FAcctType_Type"/>
+  <xs:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FAcctId_Type"/>
+  <xs:element name="AccountsDetailRecord" type="tns:AccountsDetailRecord_Type"/>
+  <xs:complexType name="AccountsDetailRecord_Type">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:AcctKeys_Type" name="Acct"/>
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:AcctStatusDesc_Type" name="acctStatusDesc"/>
+      <!--Estado Producto-->
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:StartDt_Type" name="startDt"/>
+      <!--Fecha Apertura-->
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:EndDt_Type" name="endDt"/>
+      <!--Fecha Cierre-->
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:CurrencyAmount_Type" name="AcctBal"/>
+      <!--Saldo Disponible Sin Sobregiro-->
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:CurrencyAmount_Type" name="OverDraftAcctAmt"/>
+      <!--Valor Sobregiro-->
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:CurrencyAmount_Type" name="ExtAcctBal"/>
+      <!--Saldo Disponible Con Sobregiro-->
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:CurrencyAmount_Type" name="SwapAcctBal"/>
+      <!--Saldo Canje-->
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:Desc_Type" name="desc"/>
+      <!--Descripción Producto-->
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:CurrencyAmount_Type" name="CurAmt"/>
+      <!--Capital-->
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:CurrencyAmount_Type" name="AcctTaxInfo"/>
+      <!--Interés-->
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:CurrencyAmount_Type" name="TaxPaidCurAmt"/>
+      <!--Interés Factura-->
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:OpenEnum_Type" name="aging"/>
+      <!--Días Mora-->
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:Decimal_Type" name="payOffAmt"/>
+      <!--Mora-->
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:CurrencyAmount_Type" name="RefInfoAcct"/>
+      <!--Extracontable-->
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:Decimal_Type" name="pmtAddAcct"/>
+      <!--Cargos-->
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:DateTime_Type" name="dueDt"/>
+      <!--FechaIncioMora-->
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:Decimal_Type" name="overLimitAmt"/>
+      <!--Cupo-->
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:Restrict_Type" name="restrict"/>
+      <!--Tipo Bloqueo-->
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:C" name="restrictClass"/>
+      <!--Clase Bloqueo-->
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:C" name="restrictReason"/>
+      <!--MotivoBloqueo-->
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:CurRate_Type" name="curRate"/>
+      <!--Tasa Actual-->
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:CurCode_Type" name="curCode"/>
+      <!--Moneda-->
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:AcctType_Type" name="acctRelType"/>
+      <!--Tipo cuenta relacionada-->
+      <xs:element minOccurs="0" maxOccurs="1" type="cmm2:AcctId_Type" name="acctRelId"/>
+      <!--Número de cuenta relacionada a-->
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Faggregates%2FAcctKeys_Type</con:url><con:content><![CDATA[<xsd:schema targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://itau.com.co/commoncannonical/v2/schemas">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FAcctType_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FAcctId_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FAcctSubType_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FBranchId_Type"/>
+  <xsd:complexType name="AcctKeys_Type">
+    <xsd:sequence>
+      <xsd:element name="acctId" type="AcctId_Type" minOccurs="1" maxOccurs="1"/>
+      <xsd:element name="acctType" type="AcctType_Type" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="acctSubType" type="AcctSubType_Type" minOccurs="0" maxOccurs="1"/>
+      <xsd:element name="branchId" type="BranchId_Type" minOccurs="0" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FAcctType_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FOpenEnum_Type"/>
+  <xsd:simpleType name="AcctType_Type">
+    <xsd:restriction base="OpenEnum_Type">
+      <xsd:maxLength value="36"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FAcctId_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FC"/>
+  <xsd:simpleType name="AcctId_Type">
+    <xsd:restriction base="C">
+      <xsd:maxLength value="36"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FAcctSubType_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FOpenEnum_Type"/>
+  <xsd:simpleType name="AcctSubType_Type">
+    <xsd:restriction base="OpenEnum_Type"/>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FBranchId_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FC"/>
+  <xsd:simpleType name="BranchId_Type">
+    <xsd:restriction base="C">
+      <xsd:maxLength value="22"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FAcctStatusDesc_Type</con:url><con:content><![CDATA[<xsd:schema targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://itau.com.co/commoncannonical/v2/schemas">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FC"/>
+  <xsd:simpleType name="AcctStatusDesc_Type">
+    <xsd:restriction base="C">
+      <xsd:maxLength value="2048"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FStartDt_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FDateTime_Type"/>
+  <xsd:simpleType name="StartDt_Type">
+    <xsd:restriction base="DateTime_Type"></xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FEndDt_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FDateTime_Type"/>
+  <xsd:simpleType name="EndDt_Type">
+    <xsd:restriction base="DateTime_Type"></xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FCurrencyAmount_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FAmt_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FCurCode_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FCurRate_Type"/>
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FCurConvertRule_Type"/>
+  <xsd:complexType name="CurrencyAmount_Type">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="amt" type="Amt_Type"/>
+      <xsd:element minOccurs="0" name="curCode" type="CurCode_Type"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FAmt_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FDecimal_Type"/>
+  <xsd:simpleType name="Amt_Type">
+    <xsd:restriction base="Decimal_Type"/>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FDecimal_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:simpleType name="Decimal_Type">
+    <xsd:annotation>
+      <xsd:documentation>Decimal indicates a numeric value that meets the
+				following rules:</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:decimal"/>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FCurCode_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FC"/>
+  <xsd:simpleType name="CurCode_Type">
+    <xsd:restriction base="C">
+      <xsd:maxLength value="3"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FCurRate_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FDecimal_Type"/>
+  <xsd:simpleType name="CurRate_Type">
+    <xsd:restriction base="Decimal_Type"/>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FCurConvertRule_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FClosedEnum_Type"/>
+  <xsd:simpleType name="CurConvertRule_Type">
+    <xsd:restriction base="ClosedEnum_Type">
+      <xsd:enumeration value="Direct"/>
+      <xsd:enumeration value="Indirect"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FClosedEnum_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FC"/>
+  <xsd:simpleType name="ClosedEnum_Type">
+    <xsd:restriction base="C">
+      <xsd:maxLength value="80"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FOverDraftAcctAmt_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FCurAmt_Type"/>
+  <xsd:complexType name="OverDraftAcctAmt_Type">
+    <xsd:sequence>
+      <xsd:element name="CurAmt" type="CurrencyAmount_Type"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FCurAmt_Type</con:url><con:content>&lt;xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  &lt;xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FCurrencyAmount_Type"/>
+  &lt;xsd:element name="CurAmt" type="CurrencyAmount_Type"/>
+&lt;/xsd:schema></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FDesc_Type</con:url><con:content><![CDATA[<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" xmlns="http://itau.com.co/commoncannonical/v2/schemas" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FC"/>
+  <xsd:simpleType name="Desc_Type">
+    <xsd:restriction base="C">
+      <xsd:maxLength value="250"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:element name="Desc" type="Desc_Type"/>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2?SCHEMA%2FCommonCanonical%2Fv2%2Finterfaces%2Fschemas%2Ftypes%2FRestrict_Type</con:url><con:content><![CDATA[<xsd:schema targetNamespace="http://itau.com.co/commoncannonical/v2/schemas" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://itau.com.co/commoncannonical/v2/schemas">
+  <xsd:simpleType name="Restrict_Type">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="3"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2</con:endpoint></con:endpoints><con:operation id="3c117e32-00a5-4fda-8feb-100d168bff32" isOneWay="false" action="http://itau.com.co/services/accounts/accountsdetailbydocument/operations/getAccountsDetailByDocument" name="getAccountsDetailByDocument" bindingOperationName="getAccountsDetailByDocument" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f1f7ab54-5ac0-4c9f-88d8-1328785383ae" name="PU01-Exitoso"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sch="http://itau.com.co/services/accounts/accountsdetailbydocument/v2/schemas" xmlns:sch1="http://itau.com.co/commoncannonical/v2/schemas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sch:getAccountsDetailByDocumentRequest>
+         <sch:HeaderRequest>
+            <!--Optional:-->
+            <sch1:MessageHeader>
+               <!--Optional:-->
+               <sch1:MessageKey>
+                  <!--Optional:-->
+                  <sch1:integrationId>string</sch1:integrationId>
+                  <!--Optional:-->
+                  <sch1:requestVersion>string</sch1:requestVersion>
+                  <sch1:requestUUID>${=java.util.UUID.randomUUID()}</sch1:requestUUID>
+               </sch1:MessageKey>
+               <!--Optional:-->
+               <sch1:MessageInfo>
+                  <sch1:dateTime>2008-09-28T20:49:45</sch1:dateTime>
+                  <sch1:systemId>string</sch1:systemId>
+                  <!--Optional:-->
+                  <sch1:originatorName>Portal</sch1:originatorName>
+                  <sch1:originatorType>10</sch1:originatorType>
+                  <sch1:terminalId>string</sch1:terminalId>
+                  <!--Optional:-->
+                  <sch1:terminalType>string</sch1:terminalType>
+                  <!--Optional:-->
+                  <sch1:bankIdType>string</sch1:bankIdType>
+                  <!--Optional:-->
+                  <sch1:bankId>string</sch1:bankId>
+                  <!--Optional:-->
+                  <sch1:trnType>string</sch1:trnType>
+               </sch1:MessageInfo>
+               <!--Optional:-->
+               <sch1:TrnInfoList>
+                  <!--Zero or more repetitions:-->
+                  <sch1:TrnInfo>
+                     <!--Optional:-->
+                     <sch1:trnCode>string</sch1:trnCode>
+                     <!--Optional:-->
+                     <sch1:trnSrc>string</sch1:trnSrc>
+                  </sch1:TrnInfo>
+               </sch1:TrnInfoList>
+            </sch1:MessageHeader>
+            <!--Optional:-->
+            <sch1:User>
+               <!--Optional:-->
+               <sch1:userName>TEST</sch1:userName>
+               <!--Optional:-->
+               <sch1:userToken></sch1:userToken>
+               <!--Optional:-->
+               <sch1:employeeIdentlNum>2871</sch1:employeeIdentlNum>
+            </sch1:User>
+         </sch:HeaderRequest>
+         <sch:CustId>
+            <!--Optional:-->
+            <sch1:SPName></sch1:SPName>
+            <!--Optional:-->
+            <sch1:custPermId>76313970</sch1:custPermId>
+            <!--Optional:-->
+            <sch1:custLoginId></sch1:custLoginId>
+            <!--Optional:-->
+            <sch1:custType>1</sch1:custType>
+         </sch:CustId>
+         <!--Optional:-->
+         <sch:AcctStatus>
+            <!--Optional:-->
+            <sch:acctStatusCode></sch:acctStatusCode>
+            <!--Optional:-->
+            <sch:restrictedDbInd>S</sch:restrictedDbInd>
+            <!--Optional:-->
+            <sch:restrictedDrInd>S</sch:restrictedDrInd>
+            <!--Optional:-->
+            <sch:lockStatusInd>S</sch:lockStatusInd>
+            <!--Optional:-->
+            <sch:additionalStatus></sch:additionalStatus>
+         </sch:AcctStatus>
+      </sch:getAccountsDetailByDocumentRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://itau.com.co/services/accounts/accountsdetailbydocument/operations/getAccountsDetailByDocument"/><con:wsrmConfig version="1.2"/></con:call><con:call id="7ad4ab3c-1427-419d-8038-28cbe40d2a6d" name="PU03-ErrorEstructura"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sch="http://itau.com.co/services/accounts/accountsdetailbydocument/v2/schemas" xmlns:sch1="http://itau.com.co/commoncannonical/v2/schemas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sch:getAccountsDetailByDocumentRequest>
+         <sch:HeaderRequest>
+            <!--Optional:-->
+            <sch1:MessageHeader>
+               <!--Optional:-->
+               <sch1:MessageKey>
+                  <!--Optional:-->
+                  <sch1:integrationId>string</sch1:integrationId>
+                  <!--Optional:-->
+                  <sch1:requestVersion>string</sch1:requestVersion>
+                  <sch1:requestUUID>${=java.util.UUID.randomUUID()}</sch1:requestUUID>
+               </sch1:MessageKey>
+               <!--Optional:-->
+               <sch1:MessageInfo>
+                  <sch1:dateTime>FECHA</sch1:dateTime>
+                  <sch1:systemId>string</sch1:systemId>
+                  <!--Optional:-->
+                  <sch1:originatorName>Portal</sch1:originatorName>
+                  <sch1:originatorType>10</sch1:originatorType>
+                  <sch1:terminalId>string</sch1:terminalId>
+                  <!--Optional:-->
+                  <sch1:terminalType>string</sch1:terminalType>
+                  <!--Optional:-->
+                  <sch1:bankIdType>string</sch1:bankIdType>
+                  <!--Optional:-->
+                  <sch1:bankId>string</sch1:bankId>
+                  <!--Optional:-->
+                  <sch1:trnType>string</sch1:trnType>
+               </sch1:MessageInfo>
+               <!--Optional:-->
+               <sch1:TrnInfoList>
+                  <!--Zero or more repetitions:-->
+                  <sch1:TrnInfo>
+                     <!--Optional:-->
+                     <sch1:trnCode>string</sch1:trnCode>
+                     <!--Optional:-->
+                     <sch1:trnSrc>string</sch1:trnSrc>
+                  </sch1:TrnInfo>
+               </sch1:TrnInfoList>
+            </sch1:MessageHeader>
+            <!--Optional:-->
+            <sch1:User>
+               <!--Optional:-->
+               <sch1:userName>TEST</sch1:userName>
+               <!--Optional:-->
+               <sch1:userToken></sch1:userToken>
+               <!--Optional:-->
+               <sch1:employeeIdentlNum>2871</sch1:employeeIdentlNum>
+            </sch1:User>
+         </sch:HeaderRequest>
+         <sch:CustId>
+            <!--Optional:-->
+            <sch1:SPName></sch1:SPName>
+            <!--Optional:-->
+            <sch1:custPermId>76313970</sch1:custPermId>
+            <!--Optional:-->
+            <sch1:custLoginId></sch1:custLoginId>
+            <!--Optional:-->
+            <sch1:custType>1</sch1:custType>
+         </sch:CustId>
+         <!--Optional:-->
+         <sch:AcctStatus>
+            <!--Optional:-->
+            <sch:acctStatusCode></sch:acctStatusCode>
+            <!--Optional:-->
+            <sch:restrictedDbInd></sch:restrictedDbInd>
+            <!--Optional:-->
+            <sch:restrictedDrInd></sch:restrictedDrInd>
+            <!--Optional:-->
+            <sch:lockStatusInd></sch:lockStatusInd>
+            <!--Optional:-->
+            <sch:additionalStatus></sch:additionalStatus>
+         </sch:AcctStatus>
+      </sch:getAccountsDetailByDocumentRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://itau.com.co/services/accounts/accountsdetailbydocument/operations/getAccountsDetailByDocument"/><con:wsrmConfig version="1.2"/></con:call><con:call id="2e567213-8042-412c-8514-3f841f6a9049" name="PU02-ErrorTecnico"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sch="http://itau.com.co/services/accounts/accountsdetailbydocument/v2/schemas" xmlns:sch1="http://itau.com.co/commoncannonical/v2/schemas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sch:getAccountsDetailByDocumentRequest>
+         <sch:HeaderRequest>
+            <!--Optional:-->
+            <sch1:MessageHeader>
+               <!--Optional:-->
+               <sch1:MessageKey>
+                  <!--Optional:-->
+                  <sch1:integrationId>string</sch1:integrationId>
+                  <!--Optional:-->
+                  <sch1:requestVersion>string</sch1:requestVersion>
+                  <sch1:requestUUID>${=java.util.UUID.randomUUID()}</sch1:requestUUID>
+               </sch1:MessageKey>
+               <!--Optional:-->
+               <sch1:MessageInfo>
+                  <sch1:dateTime>2008-09-28T20:49:45</sch1:dateTime>
+                  <sch1:systemId>string</sch1:systemId>
+                  <!--Optional:-->
+                  <sch1:originatorName>Portal</sch1:originatorName>
+                  <sch1:originatorType>10</sch1:originatorType>
+                  <sch1:terminalId>string</sch1:terminalId>
+                  <!--Optional:-->
+                  <sch1:terminalType>string</sch1:terminalType>
+                  <!--Optional:-->
+                  <sch1:bankIdType>string</sch1:bankIdType>
+                  <!--Optional:-->
+                  <sch1:bankId>string</sch1:bankId>
+                  <!--Optional:-->
+                  <sch1:trnType>string</sch1:trnType>
+               </sch1:MessageInfo>
+               <!--Optional:-->
+               <sch1:TrnInfoList>
+                  <!--Zero or more repetitions:-->
+                  <sch1:TrnInfo>
+                     <!--Optional:-->
+                     <sch1:trnCode>string</sch1:trnCode>
+                     <!--Optional:-->
+                     <sch1:trnSrc>string</sch1:trnSrc>
+                  </sch1:TrnInfo>
+               </sch1:TrnInfoList>
+            </sch1:MessageHeader>
+            <!--Optional:-->
+            <sch1:User>
+               <!--Optional:-->
+               <sch1:userName>TEST</sch1:userName>
+               <!--Optional:-->
+               <sch1:userToken></sch1:userToken>
+               <!--Optional:-->
+               <sch1:employeeIdentlNum>2871</sch1:employeeIdentlNum>
+            </sch1:User>
+         </sch:HeaderRequest>
+         <sch:CustId>
+            <!--Optional:-->
+            <sch1:SPName></sch1:SPName>
+            <!--Optional:-->
+            <sch1:custPermId>76313970</sch1:custPermId>
+            <!--Optional:-->
+            <sch1:custLoginId></sch1:custLoginId>
+            <!--Optional:-->
+            <sch1:custType>12345</sch1:custType>
+         </sch:CustId>
+         <!--Optional:-->
+         <sch:AcctStatus>
+            <!--Optional:-->
+            <sch:acctStatusCode></sch:acctStatusCode>
+            <!--Optional:-->
+            <sch:restrictedDbInd></sch:restrictedDbInd>
+            <!--Optional:-->
+            <sch:restrictedDrInd></sch:restrictedDrInd>
+            <!--Optional:-->
+            <sch:lockStatusInd></sch:lockStatusInd>
+            <!--Optional:-->
+            <sch:additionalStatus></sch:additionalStatus>
+         </sch:AcctStatus>
+      </sch:getAccountsDetailByDocumentRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://itau.com.co/services/accounts/accountsdetailbydocument/operations/getAccountsDetailByDocument"/><con:wsrmConfig version="1.2"/></con:call><con:call id="80c6e1bb-7c97-471e-8d60-f90f199f17ed" name="PU04-ErrorNegocio"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.186.11.91:24200/services/accounts/accountsdetailbydocument/v2</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sch="http://itau.com.co/services/accounts/accountsdetailbydocument/v2/schemas" xmlns:sch1="http://itau.com.co/commoncannonical/v2/schemas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sch:getAccountsDetailByDocumentRequest>
+         <sch:HeaderRequest>
+            <!--Optional:-->
+            <sch1:MessageHeader>
+               <!--Optional:-->
+               <sch1:MessageKey>
+                  <!--Optional:-->
+                  <sch1:integrationId>string</sch1:integrationId>
+                  <!--Optional:-->
+                  <sch1:requestVersion>string</sch1:requestVersion>
+                  <sch1:requestUUID>${=java.util.UUID.randomUUID()}</sch1:requestUUID>
+               </sch1:MessageKey>
+               <!--Optional:-->
+               <sch1:MessageInfo>
+                  <sch1:dateTime>2008-09-28T20:49:45</sch1:dateTime>
+                  <sch1:systemId>string</sch1:systemId>
+                  <!--Optional:-->
+                  <sch1:originatorName>Portal</sch1:originatorName>
+                  <sch1:originatorType>10</sch1:originatorType>
+                  <sch1:terminalId>string</sch1:terminalId>
+                  <!--Optional:-->
+                  <sch1:terminalType>string</sch1:terminalType>
+                  <!--Optional:-->
+                  <sch1:bankIdType>string</sch1:bankIdType>
+                  <!--Optional:-->
+                  <sch1:bankId>string</sch1:bankId>
+                  <!--Optional:-->
+                  <sch1:trnType>string</sch1:trnType>
+               </sch1:MessageInfo>
+               <!--Optional:-->
+               <sch1:TrnInfoList>
+                  <!--Zero or more repetitions:-->
+                  <sch1:TrnInfo>
+                     <!--Optional:-->
+                     <sch1:trnCode>string</sch1:trnCode>
+                     <!--Optional:-->
+                     <sch1:trnSrc>string</sch1:trnSrc>
+                  </sch1:TrnInfo>
+               </sch1:TrnInfoList>
+            </sch1:MessageHeader>
+            <!--Optional:-->
+            <sch1:User>
+               <!--Optional:-->
+               <sch1:userName>TEST</sch1:userName>
+               <!--Optional:-->
+               <sch1:userToken></sch1:userToken>
+               <!--Optional:-->
+               <sch1:employeeIdentlNum>2871</sch1:employeeIdentlNum>
+            </sch1:User>
+         </sch:HeaderRequest>
+         <sch:CustId>
+            <!--Optional:-->
+            <sch1:SPName></sch1:SPName>
+            <!--Optional:-->
+            <sch1:custPermId></sch1:custPermId>
+            <!--Optional:-->
+            <sch1:custLoginId></sch1:custLoginId>
+            <!--Optional:-->
+            <sch1:custType>1</sch1:custType>
+         </sch:CustId>
+         <!--Optional:-->
+         <sch:AcctStatus>
+            <!--Optional:-->
+            <sch:acctStatusCode></sch:acctStatusCode>
+            <!--Optional:-->
+            <sch:restrictedDbInd></sch:restrictedDbInd>
+            <!--Optional:-->
+            <sch:restrictedDrInd></sch:restrictedDrInd>
+            <!--Optional:-->
+            <sch:lockStatusInd></sch:lockStatusInd>
+            <!--Optional:-->
+            <sch:additionalStatus></sch:additionalStatus>
+         </sch:AcctStatus>
+      </sch:getAccountsDetailByDocumentRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://itau.com.co/services/accounts/accountsdetailbydocument/operations/getAccountsDetailByDocument"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
