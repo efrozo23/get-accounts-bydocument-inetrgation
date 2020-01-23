@@ -9,7 +9,7 @@ spec:
               value: '-Xms512m -Xmx1024m -Dfile.encoding=ISO-8859-1'
           envFrom:
             - configMapRef:
-                name: get-accounts-bydocuments-config
+                name: get-accounts-bydocument-configmp
           readinessProbe:
             httpGet:
               path: /healthcheck
