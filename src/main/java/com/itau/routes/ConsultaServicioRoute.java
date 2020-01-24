@@ -150,6 +150,7 @@ public class ConsultaServicioRoute extends RouteBuilder{
 			.bean(ResponseHandler.class, "responseOK")
 			.setHeader(Exchange.HTTP_RESPONSE_CODE, constant(200))
 			.setHeader(Exchange.CONTENT_TYPE, constant(MediaType.APPLICATION_JSON_UTF8))
+			.log(LoggingLevel.INFO, logger, "Proceso: ${exchangeProperty.procesoId} | Mensaje: Finalizo el proceso")
 			.end();
 		
 		

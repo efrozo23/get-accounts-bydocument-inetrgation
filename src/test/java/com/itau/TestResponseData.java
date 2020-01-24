@@ -33,7 +33,7 @@ import com.itau.util.Constants;
 @Configuration
 @MockEndpoints("log:*")
 @UseAdviceWith
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT, properties = { "server.port=8081" })
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT, properties = { "server.port=8085" })
 public class TestResponseData {
 
 	private Logger logger = LoggerFactory.getLogger(TestServiceSimulator.class);

@@ -34,7 +34,7 @@ import com.itau.util.Constants;
 @Configuration
 @MockEndpoints("log:*")
 @UseAdviceWith
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT, properties = { "server.port=8081" })
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT, properties = { "server.port=8085" })
 public class TestServiceSimulator {
 	
 	private Logger logger = LoggerFactory.getLogger(TestServiceSimulator.class);
@@ -67,8 +67,8 @@ public class TestServiceSimulator {
             public void configure() throws Exception {
               // send the outgoing message to mock
           	//Ok, funcionan los dos.
-              weaveByToUri(Constants.ROUTE_CONSUMO_SOAP).replace().inOut("mock:routeB").removeHeaders("*").to("velocity:templates/responseOK.vm").end();
-//              interceptSendToEndpoint(Constant.ROUTE_CONSUMO_SOAP).skipSendToOriginalEndpoint().to("velocity:templates/responseSOAP.vm");
+//              weaveByToUri(Constants.ROUTE_CONSUMO_SOAP).replace().inOut("mock:routeB").removeHeaders("*").to("velocity:templates/responseOK.vm").end();
+              interceptSendToEndpoint(Constants.ROUTE_CONSUMO_SOAP).skipSendToOriginalEndpoint().to("velocity:templates/responseOK.vm");
             }
           });
     	
