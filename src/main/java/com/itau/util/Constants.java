@@ -9,7 +9,7 @@ public class Constants {
 	public static final String ROUTE_CONSULTA_DATOS = "direct:consulta-soap";
 	public static final String PROCESO_ID = "procesoId";
 	public static final String[] HEADERS = { "custPermId", "custType", "restrictedDbInd", "restrictedDrInd",
-			"lockStatusInd", "requestUUID", "dateTime", "originatorName", "originatorType", "terminalId" };
+			"lockStatusInd", "requestUUID", "dateTime", "originatorName", "originatorType", "terminalId","acctStatusCode" ,"additionalStatus" };
 	
 	public static final String ROUTE_CONSUMO_SOAP = "direct:consumo-soap";
 	public static final String ROUTE_VALIDATOR_STATUS = "direct:validator-data";

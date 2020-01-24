@@ -63,7 +63,7 @@
          <!--Optional:-->
          <sch:AcctStatus>
             <!--Optional:-->
-            <sch:acctStatusCode></sch:acctStatusCode>
+            <sch:acctStatusCode>${headers.acctStatusCode}</sch:acctStatusCode>
             <!--Optional:-->
             <sch:restrictedDbInd>${headers.restrictedDbInd}</sch:restrictedDbInd>
             <!--Optional:-->
@@ -71,7 +71,7 @@
             <!--Optional:-->
             <sch:lockStatusInd>${headers.lockStatusInd}</sch:lockStatusInd>
             <!--Optional:-->
-            <sch:additionalStatus></sch:additionalStatus>
+            <sch:additionalStatus>${headers.additionalStatus}</sch:additionalStatus>
          </sch:AcctStatus>
       </sch:getAccountsDetailByDocumentRequest>
    </soapenv:Body>

@@ -277,6 +277,16 @@
 									<exclude>fmp-openshift-route</exclude>
 								</excludes>
 							</enricher>
+							<generator>
+								<config>
+									<spring-boot>
+										<fromMode>
+											isTag
+										</fromMode>
+										<from>redhat-openjdk18-openshift:1.2</from>
+									</spring-boot>
+								</config>
+							</generator>
 						</configuration>
 						<executions>
 							<execution>

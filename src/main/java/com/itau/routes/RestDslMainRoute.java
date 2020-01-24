@@ -59,6 +59,13 @@ public class RestDslMainRoute extends RouteBuilder {
 			.param().name("lockStatusInd").description("Filtro tres").dataType("int").defaultValue("false")
 			.required(false)
 			.endParam()
+			.param().name("acctStatusCode").description("Filtro cuatro").dataType("int").defaultValue("false")
+			.required(false)
+			.endParam()
+			.param().name("additionalStatus").description("Filtro cinco").dataType("int").defaultValue("false")
+			.required(false)
+			.endParam()
+			
         	.to(Constants.ROUTE_CONSULTA_DATOS);
         
        
