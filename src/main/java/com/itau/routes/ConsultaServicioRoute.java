@@ -87,8 +87,12 @@ public class ConsultaServicioRoute extends RouteBuilder{
 			.end()
 			.setProperty(Constants.PROCESO_ID, simple("${exchangeId}"))
 			.log(LoggingLevel.INFO, logger, "Proceso: ${exchangeProperty.procesoId} | Mensaje: Inicio la ruta principal")
+			.log(LoggingLevel.DEBUG, logger, "Proceso: ${exchangeProperty.procesoId} | Mensaje: Datos del cliente ${headers.id_cedula}")
 			.process(x->{
 				Map<String,Object> headers = x.getIn().getHeaders();
+				String[] dataClient = x.getIn().getHeader("id_cedula", String.class).split("_");
+				headers.put(Constants.HEADERS[0], dataClient[0]);
+				headers.put(Constants.HEADERS[1], dataClient[1]);
 				for (int i = 0; i < Constants.HEADERS.length; i++) {
 					if(!headers.containsKey(Constants.HEADERS[i]) || headers.get(Constants.HEADERS[i]) == null) {
 						x.getIn().setHeader(Constants.HEADERS[i], "");
