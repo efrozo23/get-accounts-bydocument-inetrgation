@@ -34,13 +34,16 @@ import com.itau.util.Constants;
 @Configuration
 @MockEndpoints("log:*")
 @UseAdviceWith
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT, properties = { "server.port=8085" })
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 public class TestServiceSimulator {
 	
 	private Logger logger = LoggerFactory.getLogger(TestServiceSimulator.class);
 	
 	@Value("${server.port}")
 	private String port;
+	
+	@Value("${path.test}")
+	private String path;
 	
 	private final String URL = "http://localhost:";
 	
@@ -72,7 +75,7 @@ public class TestServiceSimulator {
             }
           });
     	
-    	ResponseEntity<String> response = testRestTemplate.exchange(URL + port + "GET/services/v2/accounts/accountsdetailbydocument?custType=1&custPermId=76313970", HttpMethod.GET	,entity, String.class);
+    	ResponseEntity<String> response = testRestTemplate.exchange(URL + port + path, HttpMethod.GET	,entity, String.class);
     	logger.info("Respuesta:{}", response.getBody());
     	assertThat(response.getStatusCodeValue()).isEqualByComparingTo(200);
 	}

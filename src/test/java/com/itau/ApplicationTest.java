@@ -28,11 +28,14 @@ import org.springframework.test.context.junit4.SpringRunner;
  */
 @RunWith(SpringRunner.class)
 @Configuration
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT, properties = { "server.port=8085" })
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 public class ApplicationTest {
 
     @Value("${server.port}")
     private String serverPort;
+    
+    @Value("${path.test}")
+	private String path;
 
     @Autowired
     private TestRestTemplate restTemplate;
@@ -60,7 +63,7 @@ public class ApplicationTest {
     	headers.add("originatorType", "47");
     	headers.add("terminalId", "127.0.0.1");
     	HttpEntity<String> entity = new HttpEntity<>(headers); 	
-    	ResponseEntity<String> response = restTemplate.exchange(URL + serverPort + "GET/services/v2/accounts/accountsdetailbydocument?custType=1&custPermId=76313970", HttpMethod.GET	,entity, String.class);
+    	ResponseEntity<String> response = restTemplate.exchange(URL + serverPort + path, HttpMethod.GET	,entity, String.class);
     	logger.info("Respuesta:{}", response.getBody());
     	assertThat(response.getStatusCodeValue()).isEqualByComparingTo(422);
 	}
