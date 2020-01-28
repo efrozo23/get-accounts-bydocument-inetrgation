@@ -65,9 +65,9 @@
             <!--Optional:-->
             <sch:acctStatusCode>${headers.acctStatusCode}</sch:acctStatusCode>
             <!--Optional:-->
-            <sch:restrictedDbInd>${headers.restrictedDbInd}</sch:restrictedDbInd>
+            <sch:restrictedCbInd>${headers.restrictedCbInd}</sch:restrictedCbInd>
             <!--Optional:-->
-            <sch:restrictedDrInd>${headers.restrictedDrInd}</sch:restrictedDrInd>
+            <sch:restrictedCrInd>${headers.restrictedCrInd}</sch:restrictedCrInd>
             <!--Optional:-->
             <sch:lockStatusInd>${headers.lockStatusInd}</sch:lockStatusInd>
             <!--Optional:-->

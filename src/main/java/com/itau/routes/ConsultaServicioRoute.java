@@ -150,7 +150,7 @@ public class ConsultaServicioRoute extends RouteBuilder{
 			.log(LoggingLevel.DEBUG, logger, "Proceso: ${exchangeProperty.procesoId} | Mensaje: No se encontro código de error")
 			.setProperty(Constants.RESPONSE_TRNINFOLIST).jsonpath("$.Body.getAccountsDetailByDocumentResponse.*.*.TrnInfoList.TrnInfo")
 			.setProperty(Constants.RESPONSE_STATUS).jsonpath("$.Body.getAccountsDetailByDocumentResponse.*.Status")
-			.setProperty(Constants.RESPONSE_ACCOUNTS_CONTAC).jsonpath("$.Body.getAccountsDetailByDocumentResponse.*.AccountsDetailRecord")
+			.setProperty(Constants.RESPONSE_ACCOUNTS_CONTAC).jsonpath("$.Body.getAccountsDetailByDocumentResponse.*.AccountsDetailRecord[*]")
 			.bean(ResponseHandler.class, "responseOK")
 			.setHeader(Exchange.HTTP_RESPONSE_CODE, constant(200))
 			.setHeader(Exchange.CONTENT_TYPE, constant(MediaType.APPLICATION_JSON_UTF8))
