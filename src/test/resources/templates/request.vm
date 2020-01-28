@@ -65,7 +65,7 @@
             <!--Optional:-->
             <sch:acctStatusCode>${headers.acctStatusCode}</sch:acctStatusCode>
             <!--Optional:-->
-            <sch:restrictedCbInd>${headers.restrictedCbInd}</sch:restrictedCbInd>
+            <sch:restrictedDbInd>${headers.restrictedDbInd}</sch:restrictedDbInd>
             <!--Optional:-->
             <sch:restrictedCrInd>${headers.restrictedCrInd}</sch:restrictedCrInd>
             <!--Optional:-->

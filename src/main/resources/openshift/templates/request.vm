@@ -67,7 +67,7 @@
             <!--Optional:-->
             <sch:restrictedDbInd>${headers.restrictedDbInd}</sch:restrictedDbInd>
             <!--Optional:-->
-            <sch:restrictedDrInd>${headers.restrictedDrInd}</sch:restrictedDrInd>
+            <sch:restrictedCrInd>${headers.restrictedCrInd}</sch:restrictedCrInd>
             <!--Optional:-->
             <sch:lockStatusInd>${headers.lockStatusInd}</sch:lockStatusInd>
             <!--Optional:-->

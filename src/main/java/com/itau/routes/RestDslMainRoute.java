@@ -50,7 +50,7 @@ public class RestDslMainRoute extends RouteBuilder {
         .get(env.getProperty("endpoint.healtcheck")).description(env.getProperty("api.description.healtcheck")).outType(String.class)
         	.route().routeId("HEALTCHECK").setBody(constant("OK")).endRest()
         .get(env.getProperty("endpoint.getaccounstbydocument")).id("GET_ACCOUNTS_BY_DOCUMENTS").description(env.getProperty("api.description.getaccounstbydocument")).outType(String.class)
-		   	.param().name("restrictedCbInd").description("Filtro").dataType("int").defaultValue("false")
+		   	.param().name("restrictedDbInd").description("Filtro").dataType("int").defaultValue("false")
 			.required(false)
 			.endParam()
 			.param().name("restrictedCrInd").description("Filtro dos").dataType("int").defaultValue("false")
