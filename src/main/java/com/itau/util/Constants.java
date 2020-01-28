@@ -8,7 +8,7 @@ public class Constants {
 
 	public static final String ROUTE_CONSULTA_DATOS = "direct:consulta-soap";
 	public static final String PROCESO_ID = "procesoId";
-	public static final String[] HEADERS = { "custPermId", "custType", "restrictedDbInd", "restrictedDrInd",
+	public static final String[] HEADERS = { "custPermId", "custType", "restrictedCbInd", "restrictedCrInd",
 			"lockStatusInd", "requestUUID", "dateTime", "originatorName", "originatorType", "terminalId","acctStatusCode" ,"additionalStatus" };
 	
 	public static final String ROUTE_CONSUMO_SOAP = "direct:consumo-soap";

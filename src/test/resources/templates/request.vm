@@ -1,8 +1,10 @@
-<request>
-<Header xmlns:ns1="http://itau.com.co/services/common/auditory/v2/schemas" xmlns="http://schemas.xmlsoap.org/soap/envelope/"/>
-<sch:HeaderRequest xmlns:ns1="http://itau.com.co/services/common/auditory/v2/schemas" xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sch="http://itau.com.co/services/accounts/accountsdetailbydocument/v2/schemas">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sch="http://itau.com.co/services/accounts/accountsdetailbydocument/v2/schemas" xmlns:sch1="http://itau.com.co/commoncannonical/v2/schemas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <sch:getAccountsDetailByDocumentRequest>
+         <sch:HeaderRequest>
             <!--Optional:-->
-            <sch1:MessageHeader xmlns:sch1="http://itau.com.co/commoncannonical/v2/schemas">
+            <sch1:MessageHeader>
                <!--Optional:-->
                <sch1:MessageKey>
                   <!--Optional:-->
@@ -40,35 +42,37 @@
                </sch1:TrnInfoList>
             </sch1:MessageHeader>
             <!--Optional:-->
-            <sch1:User xmlns:sch1="http://itau.com.co/commoncannonical/v2/schemas">
+            <sch1:User>
                <!--Optional:-->
                <sch1:userName>TEST</sch1:userName>
                <!--Optional:-->
-               <sch1:userToken/>
-               <!--Optional:-->
+               <sch1:userToken></sch1:userToken>
                
             </sch1:User>
          </sch:HeaderRequest>
-<sch:CustId xmlns:ns1="http://itau.com.co/services/common/auditory/v2/schemas" xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sch="http://itau.com.co/services/accounts/accountsdetailbydocument/v2/schemas">
+         <sch:CustId>
             <!--Optional:-->
-            <sch1:SPName xmlns:sch1="http://itau.com.co/commoncannonical/v2/schemas"/>
+            <sch1:SPName></sch1:SPName>
             <!--Optional:-->
-            <sch1:custPermId xmlns:sch1="http://itau.com.co/commoncannonical/v2/schemas">${headers.custPermId}</sch1:custPermId>
+            <sch1:custPermId>${headers.custPermId}</sch1:custPermId>
             <!--Optional:-->
-            <sch1:custLoginId xmlns:sch1="http://itau.com.co/commoncannonical/v2/schemas"/>
+            <sch1:custLoginId></sch1:custLoginId>
             <!--Optional:-->
-            <sch1:custType xmlns:sch1="http://itau.com.co/commoncannonical/v2/schemas">${headers.custType}</sch1:custType>
+            <sch1:custType>${headers.custType}</sch1:custType>
          </sch:CustId>
-<sch:AcctStatus xmlns:ns1="http://itau.com.co/services/common/auditory/v2/schemas" xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sch="http://itau.com.co/services/accounts/accountsdetailbydocument/v2/schemas">
+         <!--Optional:-->
+         <sch:AcctStatus>
             <!--Optional:-->
-            <sch:acctStatusCode/>
+            <sch:acctStatusCode>${headers.acctStatusCode}</sch:acctStatusCode>
             <!--Optional:-->
-            <sch:restrictedDbInd>${headers.restrictedDbInd}</sch:restrictedDbInd>
+            <sch:restrictedCbInd>${headers.restrictedCbInd}</sch:restrictedCbInd>
             <!--Optional:-->
-            <sch:restrictedDrInd>${headers.restrictedDrInd}</sch:restrictedDrInd>
+            <sch:restrictedCrInd>${headers.restrictedCrInd}</sch:restrictedCrInd>
             <!--Optional:-->
             <sch:lockStatusInd>${headers.lockStatusInd}</sch:lockStatusInd>
             <!--Optional:-->
-            <sch:additionalStatus/>
+            <sch:additionalStatus>${headers.additionalStatus}</sch:additionalStatus>
          </sch:AcctStatus>
-</request>
+      </sch:getAccountsDetailByDocumentRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
