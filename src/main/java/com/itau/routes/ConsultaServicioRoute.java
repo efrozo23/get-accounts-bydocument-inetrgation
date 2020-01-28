@@ -91,8 +91,8 @@ public class ConsultaServicioRoute extends RouteBuilder{
 			.process(x->{
 				Map<String,Object> headers = x.getIn().getHeaders();
 				String[] dataClient = x.getIn().getHeader("id_cedula", String.class).split("_");
-				headers.put(Constants.HEADERS[0], dataClient[1]);
-				headers.put(Constants.HEADERS[1], dataClient[0]);
+				headers.put(Constants.HEADERS[0], dataClient[0]);
+				headers.put(Constants.HEADERS[1], dataClient[1]);
 				for (int i = 0; i < Constants.HEADERS.length; i++) {
 					if(!headers.containsKey(Constants.HEADERS[i]) || headers.get(Constants.HEADERS[i]) == null) {
 						x.getIn().setHeader(Constants.HEADERS[i], "");
